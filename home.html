@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrainSync</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Top Black Bar with Settings Button -->
+    <div class="top-bar">
+        <button class="settings-btn" onclick="openSidebar()">⚙️</button>
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class="nav-bar">
+        <!-- Logo and Site Name -->
+        <div class="nav-logo">
+            <img src="images/logo_2-removebg-preview.png" alt="Logo">
+            <span>BrainSync</span>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="nav-links">
+            <a href="#b1">Notes</a>
+            <a href="#b2">Calendar</a>
+            <a href="#b3">Reminders</a>
+            <a href="#b4">Planner</a>
+        </div>
+    </div>
+
+    <!-- Hero Section with GIF -->
+    <div class="hero-section">
+        <img src="images\Blockchain Explainer Video_ AIP - Vidico __ Agency.gif" alt="Animated Background" class="hero-gif">
+        <div class="overlay">
+            <h1>Hello, <span id="username">User</span></h1>
+            <input type="text" id="search-bar" placeholder="Search Notes, Reminders, Calendar, Planner...">
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <div class="features-container">
+        <div class="feature-box">
+            <img src="images\icon_note.png" alt="Notes">
+            <span>Notes</span>
+        </div>
+        <div class="feature-box">
+            <img src="images\icon_calendar.png" alt="Calendar">
+            <span>Calendar</span>
+        </div>
+        <div class="feature-box">
+            <img src="images\icon_reminder.png" alt="Reminders">
+            <span>Reminders</span>
+        </div>
+        <div class="feature-box">
+            <img src="images\icon_plannerr.png" alt="Planner">
+            <span>Planner</span>
+        </div>
+    </div>
+
+    <!-- Notes Section (Below Features) -->
+    <div class="notes-section">
+        <!-- Left Column (70% - Notes Display) -->
+        <div class="notes-container">
+            <h2>Your Notes</h2>
+            <div class="notes-list">
+                <!-- Example Notes -->
+                <div class="note">Meeting Notes 📄</div>
+                <div class="note">Shopping List 🛒</div>
+                <div class="note">Project Plan 📌</div>
+            </div>
+            <!-- Add New Note Button -->
+            <button class="add-note-btn">➕ Add Note</button>
+        </div>
+
+        <!-- Right Column (30%) - Reserved for additional features -->
+        <div class="right-panel">
+            <h2>Quick Access</h2>
+            <p>Reserved for additional features...</p>
+        </div>
+    </div>
+
+
+
+    <!-- Sidebar -->
+    <div id="sidebar" class="sidebar">
+        <button class="close-btn" onclick="closeSidebar()">✖</button>
+        <div class="profile">
+            <img src="images/profile.png" alt="Profile Picture">
+            <h3>Your Name</h3>
+        </div>
+        <a href="#">Profile</a>
+        <a href="#">Login/Logout</a>
+    </div>
+
+    <script src="js/scripts.js"></script>
+
+</body>
+</html>
